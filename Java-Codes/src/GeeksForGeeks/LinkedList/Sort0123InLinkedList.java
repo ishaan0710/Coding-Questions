@@ -28,7 +28,8 @@ public class Sort0123InLinkedList {
             return next == null ? Integer.toString(data) : data + " -> " + next;
         }
     }
-    static Node segregate(Node head)
+
+    /*static Node segregate(Node head)
     {
         Node zeroes = new Node(-1);
         Node ones = new Node(-1);
@@ -62,7 +63,7 @@ public class Sort0123InLinkedList {
             zero_t = null;
         }
         return sorted;
-    }
+    }*/
 
     public static void main(String[] args) {
         List<Integer> input = Arrays.asList(0, 1, 1, 1, 1, 2);
@@ -77,7 +78,7 @@ public class Sort0123InLinkedList {
                 curr = curr.next;
             }
         }
-        System.out.println(segregate(head));
+        //System.out.println(segregate(head));
     }
 
 }
