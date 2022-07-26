@@ -3,6 +3,7 @@ package GeeksForGeeks.Arrays;
 // https://practice.geeksforgeeks.org/problems/subarray-with-given-sum-1587115621/1
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Queue;
 
 class SubarrayWithGivenSum {
 
