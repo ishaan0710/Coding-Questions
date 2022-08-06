@@ -8,4 +8,34 @@ package GeeksForGeeks.DynamicProgramming;
  */
 
 public class MinJumpToReachEnd {
+
+    static int minJumps(int[] arr) {
+        int n = arr.length;
+        int jumps = 0;
+        int high = n;
+        int bestJump;
+        while(true) {
+            bestJump = -1;
+            for (int i=high-1; i>=0; i--) {
+                if (high-i <= arr[i]) {
+                    bestJump = i;
+                }
+            }
+            if (bestJump == -1) {
+                return -1;
+            }
+            high = bestJump;
+            //System.out.println("Jump #" + jumps + " bestJump " + bestJump);
+            jumps++;
+            if (high == 0) {
+                return arr[0] == 0 ? -1 : jumps;
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1, 3, 5, 10, 2, 2, 6, 7, 6, 8, 9};
+        System.out.println(minJumps(arr));
+    }
+
 }
