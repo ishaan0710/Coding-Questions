@@ -1,6 +1,4 @@
-package LeetCode.Arrays;
-
-import java.util.ArrayList;
+package LeetCode.Strings;
 
 /**
  * https://leetcode.com/problems/string-to-integer-atoi/
