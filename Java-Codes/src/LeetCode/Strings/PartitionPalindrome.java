@@ -46,11 +46,9 @@ public class PartitionPalindrome {
             getPartitions(end + 1, end + 1, s, partitions, currPartitions);
             currPartitions.remove(currPartitions.size() - 1);
 
-            // Don't add to partition list
-            getPartitions(start, end + 1, s, partitions, currPartitions);
-        } else {
-            getPartitions(start, end + 1, s, partitions, currPartitions);
         }
+        // Don't add to partition list
+        getPartitions(start, end + 1, s, partitions, currPartitions);
     }
 
     private void fillPalin(String s) {
