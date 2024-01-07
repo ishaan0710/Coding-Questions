@@ -33,7 +33,6 @@ public class MedianOfTwoSortedArrays {
         int l = 0;
         int r = smallerList.length - 1;
 
-
         // Split both arrays into left and right, with i & j signify last elem to be included
 
         while (true) {

@@ -21,7 +21,7 @@ public class ValidParenthesis {
         Map<Character, Character> matchingBraces = Map.of('{', '}', '(', ')', '[', ']');
 
         for (Character ch : s.toCharArray()) {
-            if (matchingBraces.keySet().contains(ch)) {
+            if (matchingBraces.containsKey(ch)) {
                 openBraceStack.push(ch);
                 continue;
             }

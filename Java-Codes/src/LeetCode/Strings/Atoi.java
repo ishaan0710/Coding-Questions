@@ -25,7 +25,7 @@ public class Atoi {
         int iter = 0;
         int sign = 1;
         int output = 0;
-        if (s.length() == 0)
+        if (s.isEmpty())
             return output;
         //ignore leading whitespace
         while (iter < s.length() && s.charAt(iter) == ' ') {
